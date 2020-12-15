@@ -29,3 +29,22 @@ $(Build.ArtifactStagingDirectory)
 > add artifact from previuos pipeline 
 > add powershell command line script & install cloud foundry cli [add script from above link]
 > run pipeline 
+
+
+** BUILD CICD ON SAP CLOUD PLATFORM**
+
+> https://account.hanatrial.ondemand.com/trial/#/globalaccount/8ffb9b57-894e-4ece-b80c-a6c376d59aeb/subaccount/8a58d5be-4640-48db-bb37-8cf1902b6a7c/org/b39d9336-6de5-4917-8009-794b4554bf93/space/ec555589-fd08-4049-b5a8-d9623fe2d3af/applications
+> https://help.sap.com/viewer/99c72101f7ee40d0b2deb4df72ba1ad3/Cloud/en-US/c8ed09df9ebd4556ae2375feac829c24.html [Follow this]
+
+
+
+
+
+
+
+
+
+
+
+
+
