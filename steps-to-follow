@@ -4,4 +4,28 @@
 https://blogs.sap.com/2019/12/20/go-blue-green-for-your-cloud-foundry-app-from-webide-with-azure-devops/          [main link to follow]
 https://developers.sap.com/tutorials/cp-cf-fioriapps-create.html                                                  [to create sample app with .mtar in sap web ide cloud]
 
-**  **
+** azure devops  **
+1.GIT REPO
+> create new project  > store code at git repo
+
+2.CREATE PIPELINE
+
+> azure devops > new pipeline > use classc editor >azure repo git >select empty job 
+> add command line,copy files , publish artifact & agent as ubuntu16.04 [add commands from above link ]
+> display name :
+Copy Files to: $(Build.ArtifactStagingDirectory)
+  
+source folder : 
+$(agent.builddirectory)/s/mta_archives
+   
+target folder : 
+$(Build.ArtifactStagingDirectory)
+  
+path to publish :  
+$(Build.ArtifactStagingDirectory)
+
+3.CREATE RELEASE PIPELINE :
+
+> add artifact from previuos pipeline 
+> add powershell command line script & install cloud foundry cli [add script from above link]
+> run pipeline 
