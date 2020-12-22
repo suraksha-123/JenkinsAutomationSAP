@@ -12,4 +12,4 @@ jobs:
           with:
             azure-devops-project-url: https://surakshaaglave@dev.azure.com/surakshaaglave/SAP%20DevOps/_git/SAP%20DevOps
             azure-pipeline-name: 'SAP DevOps-CI'
-            azure-devops-token: ${{ gg6vmiodbi2fvcnnbtspuv2nd6qjo5v3xnxxkj74527jvqk7lsxa }}
+            azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
