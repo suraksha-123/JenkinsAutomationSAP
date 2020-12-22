@@ -9,7 +9,7 @@ pull_request:
 jobs:
     build:
         name: Call Azure Pipeline
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-16.04
         steps:
         - name: Azure Pipelines Action
           uses: Azure/pipelines@v1
