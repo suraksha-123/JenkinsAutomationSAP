@@ -9,11 +9,11 @@ pull_request:
 jobs:
     build:
         name: Call Azure Pipeline
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-latest
         steps:
         - name: Azure Pipelines Action
           uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://surakshaaglave@dev.azure.com/surakshaaglave/SAP%20DevOps/_git/SAP%20DevOps
             azure-pipeline-name: 'SAP DevOps-CI'
-            azure-devops-token: ${{ gg6vmiodbi2fvcnnbtspuv2nd6qjo5v3xnxxkj74527jvqk7lsxa }}
+            azure-devops-token: ${{ secrets.gg6vmiodbi2fvcnnbtspuv2nd6qjo5v3xnxxkj74527jvqk7lsxa }}
