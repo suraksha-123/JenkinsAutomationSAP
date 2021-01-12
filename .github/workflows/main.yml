@@ -13,3 +13,13 @@ jobs:
             azure-devops-project-url: https://dev.azure.com/surakshaaglave/SAP%20DevOps
             azure-pipeline-name: 'SAP DevOps-CI'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }} 
+    deploy-using-azure-pipelines:
+        needs: build-in-actions-workflow
+        runs-on: ubuntu-latest
+        steps:
+        - name: 'Trigger an Azure Pipeline to deploy the app to PRODUCTION'
+          uses: Azure/pipelines@releases/v1
+          with:
+            azure-devops-project-url: 'https://dev.azure.com/surakshaaglave/SAP%20DevOps'
+            azure-pipeline-name: 'New release pipeline'
+            azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
