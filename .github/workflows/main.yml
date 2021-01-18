@@ -22,4 +22,4 @@ jobs:
           with:
             azure-devops-project-url: 'https://dev.azure.com/surakshaaglave/SAP%20DevOps'
             azure-pipeline-name: 'New release pipeline'
-            azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
+            azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}' 
