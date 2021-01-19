@@ -12,14 +12,8 @@ jobs:
           with:
             azure-devops-project-url: https://dev.azure.com/surakshaaglave/SAP%20DevOps
             azure-pipeline-name: 'SAP DevOps-CI'
-            azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }} 
-    
-name: Deploy
-
-on: push
-
-jobs:
-     deploy:
+            azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+    deploy:
         name: Call Azure Pipeline
         runs-on: ubuntu-18.04
         steps:
